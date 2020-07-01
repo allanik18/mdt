@@ -1,4 +1,6 @@
 #!/bin/bash
+# simple script
+
 myuser="alla"
 if [ $myuser=$MYUSER ]
 then
