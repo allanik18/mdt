@@ -22,5 +22,14 @@
 *.RTF	 diff=astextplain
 
 # Manage EOL
-*.sh  eol=LF
-*.ps1 eol=CRLF
+*.sh  text eol=LF
+*.ps1 text eol=CRLF
+
+# Graphics
+*.png binary
+*.jpg binary
+*.jpeg binary
+
+# # Source code
+*.html  text diff=html
+*.scss  text diff=css

@@ -1,2 +1,1 @@
-# Some text
-# Some text
+Write-Host "Hello world"

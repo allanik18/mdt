@@ -1,3 +1,6 @@
 #!/bin/bash
-# Some text
-# Some text
+myuser="alla"
+if [ $myuser=$MYUSER ]
+then
+echo "The user $myuser  is the current logged in user"
+fi
