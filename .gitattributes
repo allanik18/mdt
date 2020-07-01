@@ -33,3 +33,5 @@
 # # Source code
 *.html  text diff=html
 *.scss  text diff=css
+
+*.md merge=union
