@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## 1.1.0 
 ### Added
 - Marketing banner to prompt users to upgrade to a free account
+- Marketing banner2 to prompt users to upgrade to a free account
 
 ### Changed
 
