@@ -50,3 +50,15 @@ Temporary Items
 # For www/js/
 # Include: *.js
 !www/js/*.js
+
+# For www/min/
+# Include: *-min*
+!www/min/*-min*
+
+*.png
+*.jpg
+*.jpeg
+
+!www/img/*.png
+!www/img/*.jpg
+!www/img/*.jpeg
