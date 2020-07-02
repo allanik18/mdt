@@ -10,7 +10,7 @@ def error(message){
   println "\u001B[31mERROR: ${message}\u001B[m"
 }
 
-node('master') {
+node('aws') {
   ansiColor('xterm') {
     try {
       stage ('Checkout SCM') {
