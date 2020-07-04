@@ -1,6 +1,7 @@
 pipeline {
   agent {
-    label 'aws'
+    // label 'aws'
+    label 'master'
   }
   tools {
     maven 'maven-3.6.3'
