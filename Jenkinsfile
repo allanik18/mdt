@@ -5,6 +5,7 @@ pipeline {
   }
   tools {
     maven 'maven-3.6.3'
+    nodejs 'nodejs-14.5.0'
   }
   stages {
     stage('Initialize') {
@@ -29,7 +30,20 @@ pipeline {
         expression { env.CHANGE_ID ==~ /.*/ }
       }
       steps {
-        echo "this is a pull request"
+        echo "Run stylelint on PR"
+        nodejs(nodeJSInstallationName: 'nodejs-14.5.0') {
+          // , configId: 'stylelint-config-standard') {
+          sh 'npm --version'
+          sh 'npx stylelint "**/*.css"'
+        }
+      }
+    }
+    stage('run-on-master') {
+      when {
+        expression { env.CHANGE_ID == 'master' }
+      }
+      steps {
+        echo "Run minifiers"
       }
     }
   }
