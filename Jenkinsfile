@@ -25,6 +25,14 @@ pipeline {
       }
     }
   }
+  stage('run-on-pr') {
+    when {
+      expression { env.CHANGE_ID ==~ /.*/ }
+    }
+    steps {
+      echo "this is a pull request"
+    }
+  }
   post {
     always {
       dir('SpringBootweb/target') {
