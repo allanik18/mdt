@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    // label 'aws' hooks
+    // label 'aws'
     label 'master'
   }
   tools {
